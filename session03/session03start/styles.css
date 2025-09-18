@@ -1,0 +1,218 @@
+body{
+    background-color:#807e7f;
+    color: #3a3939;
+     font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin:0;
+  padding:0;
+
+}
+
+/* grouping */
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p,
+ul,
+li, 
+blockquote {
+    margin:0;
+}
+
+header{
+    background-color: #4eaba8;
+    text-align: center;
+    border: 10px solid #3171a3;
+    padding: 30px;
+}
+
+
+nav{
+    background-color: #c199a6;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+
+nav a {
+    color: #3b9478;
+    text-decoration: none;
+    text-decoration: underline;
+    /*shorthand for margin top/bottom and margin left/right*/
+    margin: 0px 20px;
+    letter-spacing: 3px
+}
+
+/*pseudo class selector */
+nav a:hover {
+    color: #4c86a7;
+
+}
+
+main{
+    background-color: #d5aab8;
+    padding: 50px 100px;
+}
+    
+
+
+main h2{
+    font-size: 54px;
+    margin:10px 0px; 
+}
+
+
+main h3{
+    margin:10px 0px;
+    font-size: 30px;
+        color: #7c7c3d;  
+}
+
+main p{
+    
+    margin: 20px 0px;
+    font-size: 18px;
+    color: #393b3b;  
+}
+
+footer{
+    background-color: #D5AAB8;
+    padding: 200px;
+}
+
+
+p{
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    word-spacing: 5px;
+    line-height: 1.8;
+   
+}
+
+/*Image styling with hover pseudo-class*/
+img {
+    border-radius: 50%; /*rounded corners*/
+    border: 10px inset #8bafa5; /*inset style boder*/
+    box-shadow: 5px 5px 15px #528cb3;
+}
+    img:hover{
+        opacity: 0.7;
+    }
+
+    
+img {
+  width: 300px;
+  height: 300px;
+}
+
+img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+img:hover {
+  filter: grayscale(0%);
+
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+/* nav link hover */
+nav a:hover {
+  color: #4c86a7;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+       
+/*Headings with letter spacing and shadow*/
+
+h1{
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px #1b1a1a
+ }
+
+h1:hover {
+  animation: float-h1 3s ease-in-out infinite; /* apply keyframes animation to h1 */
+  transform: scale(1.05); /* scale up on hover */
+}
+
+
+h2{
+    letter-spacing: 6px;  
+    text-shadow: 2px 2px 5px   #161717
+}
+
+ h3{
+    letter-spacing: 6px;  
+    text-shadow: 2px 2px 5px   #111111
+}
+
+/*Blackquote styling*/
+blockquote{
+    border-left: 4px solid #c06271; /*left vertical line*/
+    border-right: 4px solid #c06271; /*right vertical line*/
+    padding: 10px 15px;
+    color: #168d8d;
+    line-height: 1.6;
+}
+
+  /*Descendant selector for footer li*/
+footer p a {
+  display: list-item;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #212222;
+}
+
+footer a:hover {
+  animation: float-hover 0.6s ease-in-out 1; /* play once on hover */
+  color: #ff4500;
+  transform: scale(1.1);
+}
+
+main p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+  background: #ffffffaa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #161616;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* nav link active (when clicked) */
+nav a:active {
+  transform: scale(0.9); /* shrink a bit when pressed */
+  color: #ff4500;        /* turn red when pressed */
+  transition: all 0.1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
