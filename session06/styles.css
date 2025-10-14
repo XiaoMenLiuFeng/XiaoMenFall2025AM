@@ -1,0 +1,143 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: #E0F7FA;
+    color: #1B5E20;
+}
+
+div.container {
+    width: 80%;
+    background-color: #B2EBF2;
+    /* center the div container */
+    margin: 40px auto;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #4DD0E1;
+    color: #FFFFFF;
+}
+
+nav {
+    background-color:#FFFFFF;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    background-color:#4DD0E1;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: 120px;
+}
+nav a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+nav a:hover {
+    color: #FFECB3;
+}
+
+main {
+    background-color:#B2DFDB;
+    width: 70%;
+    float: left;
+}
+
+section {
+    background-color:#B2DFDB;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color:#1B5E20;
+}
+
+aside {
+    background-color:#C8E6C9;
+    width: 30%;
+    float: left;
+}
+
+footer {
+    background-color: #4DD0E1;
+    float: none;
+    clear: both;
+}
+
+.gallery {
+    text-align: center;
+    padding:20px;
+    background-color:#88c0c8;
+}
+
+.box{
+   display: inline-block; 
+   margin: 10px;
+   padding: 10px;
+   border: 3px solid #4DD0E1;
+   border-radius: 10px;
+   background-color: #E1F5FE;
+}
+
+.box img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.box p{
+    margin: 0;
+    font-size: 14px;
+    color: #0D47A1;
+}
+
+.float-img{
+    float: right;
+    margin: 10px;
+    border: 3px solid #4DD0E1;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.float-img-left{
+    float: left;
+    margin: 10px;
+    border: 3px solid  #4DD0E1;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.clear{
+    clear: both;
+}
