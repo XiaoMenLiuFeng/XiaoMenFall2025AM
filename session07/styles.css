@@ -1,0 +1,198 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: #467676;
+    background-image: url("images/leaves01.webp");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+#wrapper {
+    margin: 0px auto;
+    /* centers the wrapper */
+    background-color: #E0F2E9;
+    max-width: 1000px;
+    border: solid 10px #C8E0D4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Add padding to all of the #wrapper child elements */
+#wrapper>* {
+    padding: 20px;
+
+}
+
+header {
+    background: #A8DADC;
+    order: 1;
+    flex: 1 0 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+main {
+
+    background: #F0FFF4;
+    order: 3;
+    flex: 1 1 500px;
+}
+
+nav {
+    background: #BEE7E5;
+    order: 2;
+    flex: 1 0 200px;
+}
+
+aside {
+    background: #D6F5F3;
+    order: 4;
+    flex: 1 0 200px;
+}
+
+footer {
+    background: #CFF3EC;
+    order: 5;
+    flex: 1 0 100%;
+}
+
+/* SUBSCRIBE BUTTON */
+div.buttonAbsolute {
+    background-color: #FFEA7F;
+    opacity: 1.0;
+    text-align: center;
+    color: #2F4F4F;
+    width: 150px;
+    border-radius: 125px;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* view gallery button */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+div.buttonRelative {
+    background-color: #FFE27F;
+    color: #2F4F4F;
+    text-align: center;
+    padding: 20px;
+    z-index: 3;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.image-box img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.image-box {
+    flex: 1 1 200px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0F2E9;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #B5DAD2;
+}
+
+.image-box p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+body,
+p,
+li {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #064663;
+}
+
+div.buttonAbsolute:hover,
+div.buttonRelative a.button-link {
+    text-decoration: none;
+    color: #064663;
+    display: block;
+    color: #064663;
+}
+
+
+nav {
+    background: #BEE7E5;
+    order: 2;
+    flex: 1 0 200px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #A9E0DD;
+    border-radius: 5px;
+    color: #064663;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #8ED5D0;
+    cursor: pointer;
+}

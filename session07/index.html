@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Flex Box Layout without Media Queries</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!--Link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Site Title</h1>
+            <h2>Site subTitle</h2>
+        </header>
+        <main>
+            <article>
+                <h2>Hydnellum regium</h2>
+                <section>
+                    <h3>Introduction </h3>
+                    <p>Hydnellum regium is a tooth fungus in the family Bankeraceae. Found in western North America, it
+                        was described as new to science in 1964 by Canadian mycologist Kenneth A. Harrison, who reported
+                        collections from Oregon, Idaho, and Colorado. It fruits singly or in groups under pine and
+                        spruce trees. Its purple-black fruitbodies are large, forming complex rosettes measuring up 25
+                        cm (10 in) wide by 15 cm (6 in) tall. The spore print is brown. Its spores are roughly
+                        spherical, tuberculate (covered with rounded bumps), and measure 4.5-6 by 3.5-4.5 μm. </p>
+
+                </section>
+                <section>
+                    <h3>Deying Properties</h3>
+                    <p>I love tooth fungus! The colors they yield are my kind of colors. They are beautiful and complex
+                        to work with in the dye pot. They love an alkaline bath and like to have their pH shifted within
+                        the first 5-10 minutes of working them. I used sodium carbonate (soda ash) to shift my dye baths
+                        to pH 9. There is a long tradition of using ammonia with tooth fungus and I might try a test to
+                        compare the results on fiber. You have to be sure to maintain the dye bath at pH 9 throughout
+                        the duration of the dye bath.
+                        <br>
+                        Cellulose fibers love high alkaline environments so they respond
+                        very well to the dye from tooth fungus. Don't worry if your fibers look like they have a brown
+                        tinge on them in the dye bath as all tooth fungus do this and the brown washes out. If you
+                        aren't happy with the results of your color you can also dip your fibers in an alkaline after
+                        bath to shift the colors. I have never been successful at getting a clear lake from any of the
+                        Hydnellums. Pigment settles to the bottom but the liquid is incredibly dark and filled with
+                        color. I save this filtered liquid, evaporate it down and use it for ink. It works beautifully.
+                    </p>
+                </section>
+                <section>
+                    <h3>Personal Experience</h3>
+                    <p>When my local Mount Adams Institute (MAI) sent out their newsletter of events and I saw Michael
+                        Beug was hosting a lecture and foray I had to double check what I had just read. I immediately
+                        texted my friends, one being Rachel Zoller, and said we had to go. I was new to the area and had
+                        heard a famous mycologist lived in our community but I had yet to substantiate the 'rumor' or
+                        figure out who it was. Reading this newsletter I automatically knew, it was Michael Beug! We all
+                        signed up and had a magical day with Michael in the forest and I learned so much from his
+                        lecture.
+                        <br>
+                        When my local Mount Adams Institute (MAI) sent out their newsletter of events and I saw Michael
+                        Beug was hosting a lecture and foray I had to double check what I had just read. I immediately
+                        texted my friends, one being Rachel Zoller, and said we had to go. I was new to the area and had
+                        heard a famous mycologist lived in our community but I had yet to substantiate the 'rumor' or
+                        figure out who it was. Reading this newsletter I automatically knew, it was Michael Beug! We all
+                        signed up and had a magical day with Michael in the forest and I learned so much from his
+                        lecture.
+                    </p>
+                </section>
+            </article>
+
+            <div class="buttonAbsolute">
+                SUBSCRIBE
+            </div>
+            <div class="buttonContainer">
+                <div class="buttonRelative">
+                    <a href="#gallery-section" class="button-link">VIEW GALLERY</a>
+                </div>
+            </div>
+
+            <!--Gallery-->
+            <section id="gallery-section" class="gallery">
+                <div class="image-box">
+                    <img src="images/Hydnellum regium01.jpeg" alt="Black Hydnellum regium mushroom">
+                    <p>Black Hydnellum regium mushroom</p>
+                </div>
+
+                <div class="image-box">
+                    <img src="images/Hydnellum regium02.jpeg" alt="Black Hydnellum regium mushroom">
+                    <p>Black Hydnellum regium mushroom</p>
+                </div>
+
+                <div class="image-box">
+                    <img src="images/Hydnellum regium03.jpg" alt="Black Hydnellum regium mushroom">
+                    <p>Black Hydnellum regium mushroom</p>
+                </div>
+
+                <div class="image-box">
+                    <img src="images/Hydnellum regium04.jpg" alt="Black Hydnellum regium mushroom">
+                    <p>Black Hydnellum regium mushroom</p>
+                </div>
+
+                <div class="image-box">
+                    <img src="images/Hydnellum regium05.jpg" alt="Black Hydnellum regium mushroom">
+                    <p>Black Hydnellum regium mushroom</p>
+                </div>
+
+            </section>
+        </main>
+
+        <nav>
+            <ul>
+                <li><a href="#">navbar item</a></li>
+                <li><a href="#">navbar item</a></li>
+                <li><a href="#">navbar item</a></li>
+                <li><a href="#">navbar item</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h2>Fun Fact</h2>
+            <p>Michael was with the North American Key Council on a retreat that weekend and said he had just been
+                talking to Steve Trudell and Joe Ammirati who wrote the book Mushrooms of the Pacific Northwest and they
+                told him that H. regium did not grow in our area. Michael was astonished. Here it was. And not only here
+                it was there were tons of patches and huge clusters of them everywhere. We started doing the happy myco
+                dance plucking them up. We had bags upon bags. We enlisted others on the foray to help carry them. I
+                have no idea how many pounds we found. Michael took a huge bag up to our friend Alissa Allen when they
+                met up at the Brightenbush foray a few weeks later. I still have bags of H. regium all these years later
+                and am so thankful Michael was there to identify this magical dye mushroom for me.
+            </p>
+        </aside>
+        <footer>
+            <h2>A Memorable Mushroom Encounter</h2>
+            <p>He told me that every other year he volunteers his time to MAI to do this as a fundraiser for
+                scholarships. That was inspirational in and of it itself. I continued to join every other year and went
+                out with Michael in 2019, the year we had an epic mushroom bloom in the Pacific Northwest. I was walking
+                around and came across a Hydnellum. I couldn't immediately identify it, so I consulted my book Mushrooms
+                of the Pacific Northwest and couldn't find it. I had never seen one like it before. I asked Michael when
+                he had a moment if he could come help me identify it. He was at least 15' away and blurted out 'that is
+                Hydnellum regium!'' and was very excited. I too got excited having never seen one before but had heard
+                of the famed mushroom dye. </p>
+
+            <p>Source: <a href="https://mushroomcoloratlas.com/mushroom/hydnellum_regium/" target="_blank">Mushroom
+                    Color Atlas</a></p>
+
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
