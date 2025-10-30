@@ -1,0 +1,143 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-color: #fef6e4;
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12,1fr);
+  gap: 15px;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: #ffb6b9;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+main {
+  background: #fff0f5;
+  /* span 6 cols */
+  grid-column: 4 / 10;
+}
+
+nav {
+  background:#ebcfc9;
+  /* span 3 cols */
+  grid-column: 1 / 4;
+  grid-row: 2/4;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 15px;
+  width: 80%;
+  background: linear-gradient(135deg, #4fc1a6, #6ad1e3, #e0f7f4);
+
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px #ffc0cb4d; 
+}
+
+nav a:hover {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee); 
+  transform: scale(1.07);
+  box-shadow: 0 6px 12px #ffb6c14d;
+}
+
+
+aside {
+  background: #eff29e;
+  /* span 3 cols */
+  grid-column: 10 / 13;
+  grid-row: 2/4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+}
+
+aside .card {
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+aside .card:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.green {
+  background: #81d89c;
+}
+
+.pink {
+  background: #ff9a9e;
+}
+
+.blue {
+  background: #a1c4fd;}
+
+.yellow {
+  background: #fda085;
+}
+
+
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+footer {
+  background: #ffc1cc;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+}
